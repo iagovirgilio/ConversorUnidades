@@ -2,6 +2,10 @@
 #include "comprimento.h"
 #include "massa.h"
 #include "volume.h"
+#include "temperatura.h"
+#include "area.h"
+#include "velocidade.h"
+#include "tempo.h"
 
 int main() {
     int escolha;
@@ -11,6 +15,10 @@ int main() {
         printf("1 - Comprimento\n");
         printf("2 - Massa\n");
         printf("3 - Volume\n");
+        printf("4 - Temperatura\n");
+        printf("5 - Área\n");
+        printf("6 - Velocidade\n");
+        printf("7 - Tempo\n");
         printf("0 - Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &escolha);
@@ -21,17 +29,33 @@ int main() {
                 break;
             case 2:
                 // Função para conversão de massa
-                printf("Funcionalidade de massa em desenvolvimento...\n");
+                printf("\nFuncionalidade de massa em desenvolvimento...\n");
                 break;
             case 3:
                 // Função para conversão de volume
-                printf("Funcionalidade de volume em desenvolvimento...\n");
+                printf("\nFuncionalidade de volume em desenvolvimento...\n");
+                break;
+            case 4:
+                // Função para conversão de temperatura
+                printf("\nFuncionalidade de temperatura em desenvolvimento...\n");
+                break;
+            case 5:
+                // Função para conversão de area
+                printf("\nFuncionalidade de area em desenvolvimento...\n");
+                break;
+            case 6:
+                // Função para conversão de velocidade
+                printf("\nFuncionalidade de velocidade em desenvolvimento...\n");
+                break;
+            case 7:
+                // Função para conversão de tempo
+                printf("\nFuncionalidade de tempo em desenvolvimento...\n");
                 break;
             case 0:
-                printf("Saindo do programa...\n");
+                printf("\nSaindo do programa...\n");
                 break;
             default:
-                printf("Opção inválida!\n");
+                printf("\nOpção inválida!\n");
                 break;
         }
     } while (escolha != 0);

@@ -24,11 +24,11 @@ void executar_conversao_comprimento() {
 
     if (opcao == 1) {
         resultado = metros_para_centimetros(valor);
-        printf("%.2f metros = %.2f centímetros\n", valor, resultado);
+        printf("\n%.2f metros = %.2f centímetros\n", valor, resultado);
     } else if (opcao == 2) {
         resultado = centimetros_para_milimetros(valor);
-        printf("%.2f centímetros = %.2f milímetros\n", valor, resultado);
+        printf("\n%.2f centímetros = %.2f milímetros\n", valor, resultado);
     } else {
-        printf("Opção inválida!\n");
+        printf("\nOpção inválida!\n");
     }
 }
