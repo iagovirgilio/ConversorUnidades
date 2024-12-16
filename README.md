@@ -62,7 +62,14 @@ Antes de começar a trabalhar no projeto, certifique-se de ter:
 
 ## **Como Trabalhar no Projeto**
 
-### 1. **Crie uma Branch para Sua Tarefa**
+### 1. **Escolha a Tarefa**
+- Acesse o repositório no GitHub.
+- Vá até a aba **Issues**.
+- Clique em  **Milestones**.
+- Comece pela milestone com o nome **"2. Funcionalidades de Conversão"** caso ela não esteja 100% concluída.
+- Selecione uma tarefa disponível e informe à equipe que você irá realizá-la.
+
+### 2. **Crie uma Branch para Sua Tarefa**
 Cada funcionalidade deve ser desenvolvida em uma branch separada:
 ```bash
 git checkout -b feature/<nome-da-funcionalidade>
@@ -72,26 +79,27 @@ Exemplo:
 git checkout -b feature/comprimento
 ```
 
-### 2. **Implemente Sua Funcionalidade**
+### 3. **Implemente Sua Funcionalidade**
 - Adicione seu código na pasta `src/` (exemplo: `comprimento.c`).
 - Crie ou edite o arquivo de cabeçalho correspondente na pasta `include/` (exemplo: `comprimento.h`).
 - Garanta que sua função seja modular e possa ser chamada no `main.c`.
+- Já foram feitos os códigos dos arquivos `comprimento.c` e `comprimento.h` para serem usados como exemplo.
 
-### 3. **Teste Localmente**
+### 4. **Teste Localmente**
 Compile e teste para garantir que sua implementação está funcionando:
 ```bash
 make
 make run
 ```
 
-### 4. **Faça Commits Regulares**
+### 5. **Faça Commits Regulares**
 Adicione e comite suas alterações com mensagens claras e descritivas:
 ```bash
 git add .
 git commit -m "Implementa conversão de comprimento de metros para centímetros"
 ```
 
-### 5. **Envie Sua Branch para o GitHub**
+### 6. **Envie Sua Branch para o GitHub**
 ```bash
 git push origin feature/<nome-da-funcionalidade>
 ```
