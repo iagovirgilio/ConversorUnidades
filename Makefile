@@ -7,14 +7,15 @@ TARGET = build/conversor.exe
 all: $(TARGET)
 
 $(TARGET): $(OBJ)
+	@if not exist build mkdir build
 	$(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	del /f src\*.o
-	del /f build\conversor.exe
+	del /f /q src\*.o
+	del /f /q build\conversor.exe
 
 run: all
 	$(TARGET)
